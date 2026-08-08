@@ -1,0 +1,89 @@
+{%extends 'base.html'%}
+{%block content%}
+   
+  <!-- Page content-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">{{single_blog.title}}</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on January 1, 2026</div>
+                    <!-- Post category-->
+                    <a class="badge bg-warning text-decoration-none text-light" href="#!">Web Development</a>
+                </header>
+                
+                <!-- Preview image figure-->
+                <figure class="mb-4">
+                    <img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="Blog Image"/>
+                </figure>
+                
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sensibus nostris qui ad naturam revocatos omne virtutis cura praeteritis futuriva pertinebit.</p>
+                    <p class="fs-5 mb-4">Science has not yet taught us if madness is or is not the sublimity of the intelligence.</p>
+
+                    <!-- Comments -->
+                    <h4>Comments</h4>
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <p class="card-text mb-0">This is a sample comment from a reader.</p>
+                            <span>
+                                <small class="text-muted">By John Doe</small> | 
+                                <small class="text-muted">2 hours ago</small>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- Comment Form -->
+                    <div class="form-group">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <textarea name="comment" class="form-control" rows="3" placeholder="Write your comment"></textarea>
+                                <input type="submit" value="Submit" class="btn btn-primary mt-2">
+                            </div>
+                        </form>
+                        <p class="mt-2">Please <span><a href="#">login</a></span> to write a comment!</p>
+                    </div>
+
+                </section>
+            </article>
+        </div>
+        
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Categories widget-->
+            <div class="card mb-4 p-3">
+                <h4 class="font-italic">Categories</h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#">HTML & CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">Python</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Side widget-->
+            <div class="card mb-4 p-3">
+                <h4 class="font-italic">Follow Us</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+{%endblock%}
