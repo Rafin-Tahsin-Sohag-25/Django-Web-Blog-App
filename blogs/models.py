@@ -31,7 +31,7 @@ class Blog(models.Model):
     status=models.CharField(max_length =30,choices=STATUS_CHOICES,default="Draft")
     is_featured=models.BooleanField(default=False)
     created_at=models.DateField(auto_now_add=True)
-    updated_at=  updated_at=models.DateField(auto_now=True)
+    updated_at=models.DateField(auto_now=True)
 
     def __str__(self):
             return self.title
